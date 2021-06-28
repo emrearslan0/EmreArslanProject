@@ -1,0 +1,443 @@
+//Main
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin-top:1rem;
+}
+@blue: #4C82B5;
+@gri:#F0F0F0;
+
+//Top Container
+.topcont {
+    color: black;
+    background-color:#F0F0F0;
+    height: 2rem;
+    width: auto;
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+        .box{
+            align-items: center;
+            margin: 0;
+        }
+        h1{
+            font-size: small;
+            color: @blue; 
+            margin: 0; 
+        }
+    .topcont-link
+   {
+       display: none;
+   } 
+}
+//Container Üst
+.cont-ust{
+    align-items: center;
+    justify-content: center;
+}
+.cont-ust-sag{
+   // padding: 0;
+   //  align-items: center;
+   // justify-content: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: grey;
+    }
+    h1{
+        margin-top: 5px;
+        display: inline-block;
+        width: auto;
+        font-size: 10px;
+    }
+    span{
+        position: absolute;  
+        margin-left:1.8rem;
+    }
+   
+}
+
+.align{
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+//Logo
+.logo{
+    font-size: 2.5rem;
+    color: @blue; 
+    display: inline-block; 
+    align-items: center;
+}
+
+//Yazılı Banner
+.banner-img-web{
+    width: auto;
+}
+.banner-img-mobil{
+    display: none;
+}
+
+//Slider
+
+#slider {
+    margin:0 auto;
+    overflow:hidden;
+     
+}
+
+
+
+#kontrol {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+		button {
+            display: block;
+            margin: 0.5rem;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			border: none;
+			border-radius: 100%;
+			background-color: black;
+			text-indent: -9999px;
+        }
+        
+}
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    a{
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    a:hover{
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .dropdown {
+        float: left;
+        
+        .dropbtn {
+            cursor: pointer;
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+          }
+    }
+}
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: lightgrey;
+  }
+  
+  .dropdown-content {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    position: absolute;
+    background-color: white;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+        .row{
+          margin:1rem;
+        }
+        .btn:hover{
+            background-color: lightgrey;
+        }
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  #btn-menu
+  {
+      display: none;
+  }
+#responsive-input
+{display: none;}
+//Açılır Menü
+#menu-input{
+    display: none;
+}
+.gezin{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: block;
+    transition: 0.1s;
+    background-color: white;
+}
+
+.gezinti-header
+{
+    margin : 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .col{
+        max-width: 33% !important;
+    }
+}
+.gezin-logo
+{
+    margin-right: 50%;
+    color: @blue; 
+    display: inline-block; 
+    align-items: center;
+    h1{
+        font-size: 1.5rem;
+    }
+}
+.gezinti-bottomheader{
+    margin : 2% auto;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    .col{
+      margin: 0 0.5rem 0 0;  
+      height: 4rem;
+      background-color: @gri;
+      align-items: center;
+      justify-content: center;
+    }
+    h1{
+        font-size: medium;
+        color: @blue; 
+        margin: 0; 
+    }
+}
+#detay-Title{
+    display: none;
+}
+.i-padding{
+    margin-right: 5%;
+}
+.box-menu{
+    background-color: white;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+    color: @blue;
+    cursor: pointer;
+    h1{ 
+        font-size: large;
+        margin-left: 5%;
+        margin-top: o;
+        margin-bottom: 0;
+        text-align: center;
+        
+    }
+   
+}
+.box-menu:hover{
+    background-color: @gri;
+}
+.last-searches{
+    display: none !important;
+    h1{
+        color: @blue;
+        font-size: medium;
+        margin-left: 5%;
+    }
+}
+.box-searches{
+  
+    background-color: @gri;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+    color: @blue;
+    cursor: pointer;
+    h1{ 
+        font-size: medium;
+        margin-left: 5%;
+        margin-top: o;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+.box-searches:hover{
+    background-color: white;
+}
+
+.menu-detay{
+    display: none !important;
+}
+
+.scrollmenu {
+    height: auto;
+    width: auto;
+    overflow-x: scroll !important;
+    display: flex;
+    img{
+        width: 40%;
+        height: auto;
+        margin-left: 2rem;
+    }
+  }
+  .btn-special
+  {
+      background-color: gray !important; 
+  }
+
+//Responsive2
+  @media screen and (max-width: 768px) { 
+    //Header
+    .logo{
+        max-width: 15%;
+        h1{
+            font-size: 1.5rem;
+        } 
+    }
+    .topcont-link
+    {
+        display: block !important;
+    } 
+    .goster{
+        display: none;
+    }
+    .show{
+        display: flex;
+    }
+    #nav-menu{
+        display: none;
+    }
+    #btn-menu
+    {
+      max-width: 10%;
+      display: block;
+      overflow: hidden;
+      
+     }
+     .col-buton{
+        max-width: 50% !important;
+        input{
+            height: auto;
+            width: auto;
+            font-size: 10px;
+          }
+     }
+     //Main
+     .cont-banners
+     {
+         display:flex;
+         //flex-wrap: nowrap !important;
+         flex-direction: column;
+         .col{
+             padding-top: 1rem;
+             padding-left: 0;
+             padding-right: 0;
+             //margin-top: 1rem;
+         }
+    }
+    //Slider
+    .slayt {   
+            img{ height: 330px !important;
+                object-fit: contain;
+            }
+           
+    }
+    
+  }
+  //Responsive3
+  @media screen and (max-width: 501px) {
+    .goster{
+        display: none;
+    }
+    #nav-menu{
+        display: none;
+    }
+    .col-buton
+    {
+     display: none;   
+    }
+    #responsive-input
+   {
+    display: flex;   
+   }
+   .logo
+   {
+       margin-left: 20%;
+       align-self: center;
+        h1{
+            text-align: center;
+        }
+   }
+   .cont-ust-sag{
+        padding: 0 !important;
+        justify-content: end;
+        .col{
+            padding: 0 !important;
+            width: 40px;
+        }
+   }
+   .resp-row{
+       justify-content: end !important;
+       margin-left: 5px !important;
+   }
+   #iconsearchBox{
+       margin-right: 5%;
+   }
+   #menu-input
+   {
+      padding-left: 10px !important;
+      padding-right: 20px !important;
+   }
+  }
+
+
+   //Responsive3
+   @media screen and (min-width: 768px) {
+    .gezin{
+        display: none !important;
+    }
+    .anasayfa{
+        display: block !important;
+    }
+  }
